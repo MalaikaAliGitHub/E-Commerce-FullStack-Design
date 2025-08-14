@@ -1,0 +1,262 @@
+.cartitems{
+    margin: 70px 170px;
+}
+
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr; 
+    align-items: center;
+    gap: 75px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.carticon-product-icon{
+   height: 62px;
+
+}
+.cartitems-remove-icon{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.cartitems-quantity{
+    width: 64px;
+    height: 50px;
+    border: 2px solid rgb(112, 112, 112);
+    background: #fff;
+
+}
+
+.cartitems-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+
+}
+.cartitems-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitems-total button:active{
+    transform: scale(0.96);
+}
+
+.cartitems-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  width: 200px;
+  margin-top: 15px;
+  padding: 20px;
+  background: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cartitems-promocode p {
+  color: #555;
+  margin: 0;
+}
+
+.cartitems-promobox {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 16px;
+  flex: 1;
+  min-width: 200px;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.cartitems-promobox button {
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.cartitems-promobox button:hover {
+  background-color: #555;
+  color: black;
+  font-weight: 500;
+}
+
+.cartitems-promobox button:active {
+  transform: scale(0.96);
+}
+
+
+
+@media (max-width: 1115px) {
+  .cartitems {
+    margin: 60px 30px;
+  }
+
+  .cartitems-format-main {
+    grid-template-columns: 0.5fr 2.5fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  .carticon-product-icon {
+    height: 50px;
+  }
+
+  .cartitems-remove-icon {
+    margin: auto;
+  }
+
+  .cartitems-quantity {
+    width: 40px;
+    height: 35px;
+  }
+
+  .cartitems-down {
+    margin: 60px 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cartitems-total {
+    margin: 0;
+  }
+
+  .cartitems-total button {
+    max-width: 200px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .cartitems-promocode {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .cartitems-promobox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cartitems-promobox input {
+    width: 250px;
+  }
+
+  .cartitems-promobox button {
+    width: 130px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .cartitems {
+    margin: 40px 20px;
+  }
+
+  .cartitems-format-main {
+    display: none;
+  }
+
+  .cartitems-format {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .cartitems-format img {
+    height: 50px;
+  }
+
+  .cartitems-total h1 {
+    font-size: 22px;
+  }
+
+  .cartitems-total-item h3, .cartitems-total-item p {
+    font-size: 16px;
+  }
+
+  .cartitems-promocode {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .cartitems-promobox input {
+    width: 220px;
+  }
+
+  .cartitems-promobox button {
+    width: 120px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .cartitems-promobox input {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .cartitems-promobox button {
+    width: 110px;
+    font-size: 14px;
+  }
+
+  .cartitems-total button {
+    width: 180px;
+    font-size: 13px;
+  }
+}

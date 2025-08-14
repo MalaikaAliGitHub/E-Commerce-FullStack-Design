@@ -1,0 +1,85 @@
+/* Global responsive styles */
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* Responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+  }
+}
+
+/* Utility classes for responsive design */
+.hide-mobile {
+  display: block;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  
+  .hide-desktop {
+    display: block;
+  }
+}
+
+/* Responsive text sizes */
+.text-responsive {
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+
+.heading-responsive {
+  font-size: clamp(24px, 4vw, 48px);
+}
+
+/* Responsive spacing */
+.section-padding {
+  padding: clamp(20px, 5vw, 60px) 0;
+}
+
+/* Responsive grid system */
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(15px, 3vw, 30px);
+}
+
+@media (max-width: 480px) {
+  .grid-responsive {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Responsive base styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility classes for responsive design */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Hide elements on mobile */
+.hide-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}

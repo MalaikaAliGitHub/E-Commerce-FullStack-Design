@@ -1,0 +1,267 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+  height: 90px;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo p {
+  color: #171717;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #FF4141;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-login-cart button {
+  width: 157px;
+  height: 58px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background: #f3f3f3;
+  border: none;
+  font-weight: 800;
+}
+
+.nav-login-cart button:active {
+  background: #f3f3f3;
+  border: none;
+  transform: scale(0.95);
+}
+
+.nav-cart-wrapper {
+  position: relative;
+}
+
+.nav-cart-wrapper img {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 12px;
+}
+
+.nav-cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .nav-menu {
+    gap: 40px;
+  }
+  
+  .nav-login-cart {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 30px;
+    font-size: 18px;
+  }
+  
+  .nav-login-cart button {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+  }
+  
+  .nav-logo p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 10px 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .nav-dropdown {
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .nav-dropdown.open {
+    transform: rotate(90deg);
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 998;
+  }
+
+  .nav-menu-visible {
+    display: flex;
+  }
+
+  .nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: scale(0.9);
+    z-index: 999;
+  }
+
+  .nav-logo {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 8px 15px;
+    height: 80px;
+  }
+  
+  .nav-menu {
+    top: 80px;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  
+  .nav-logo p {
+    font-size: 28px;
+  }
+  
+  .nav-login-cart button {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 8px 10px;
+    height: 70px;
+  }
+
+  .nav-logo {
+    transform: scale(0.85);
+  }
+
+  .nav-login-cart {
+    transform: scale(0.85);
+    gap: 15px;
+  }
+
+  .nav-menu {
+    top: 70px;
+    font-size: 16px;
+  }
+  
+  .nav-login-cart button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    height: 65px;
+  }
+  
+  .nav-menu {
+    top: 65px;
+  }
+  
+  .nav-logo p {
+    font-size: 24px;
+  }
+  
+  .nav-login-cart {
+    gap: 10px;
+  }
+  
+  .nav-login-cart button {
+    width: 90px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

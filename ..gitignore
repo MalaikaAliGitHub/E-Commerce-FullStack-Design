@@ -1,0 +1,15 @@
+# Node modules for all projects
+node_modules/
+
+# Env files for all
+.env
+.env.local
+.env.*.local
+
+# Build outputs for all
+build/
+dist/
+
+# System files
+.DS_Store
+.vscode/

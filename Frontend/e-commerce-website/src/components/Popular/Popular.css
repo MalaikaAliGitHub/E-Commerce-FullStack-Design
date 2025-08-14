@@ -1,0 +1,133 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 95vh;
+  margin-top: 50px;
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1115px) {
+  .popular {
+    height: 90vh;
+  }
+  
+  .popular h1 {
+    font-size: 40px;
+  }
+  
+  .popular hr {
+    width: 160px;
+    height: 4px;
+  }
+  
+  .popular-item {
+    gap: 15px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .popular {
+    height: 80vh;
+    margin-left: 20px;
+  }
+  
+  .popular h1 {
+    font-size: 30px;
+  }
+  
+  .popular hr {
+    width: 120px;
+    height: 3px;
+  }
+  
+  .popular-item {
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .popular {
+    height: auto;
+    margin-left: 0;
+    padding: 20px 0;
+  }
+  
+  .popular h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .popular hr {
+    width: 120px;
+    height: 3px;
+  }
+  
+  .popular-item {
+    gap: 5px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular {
+    padding: 15px 0;
+  }
+  
+  .popular h1 {
+    font-size: 18px;
+  }
+  
+  .popular hr {
+    width: 100px;
+    height: 2px;
+  }
+  
+  .popular-item {
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular {
+    padding: 10px 0;
+  }
+  
+  .popular h1 {
+    font-size: 16px;
+  }
+  
+  .popular hr {
+    width: 80px;
+  }
+  
+  .popular-item {
+    gap: 8px;
+    margin-top: 8px;
+  }
+}

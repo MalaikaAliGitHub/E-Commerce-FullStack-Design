@@ -1,0 +1,31 @@
+.category-section {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.category-banner {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.category-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
