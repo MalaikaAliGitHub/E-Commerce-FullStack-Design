@@ -1,3 +1,4 @@
+require('dotenv').config(); // load .env at the top
 const express=require('express');
 const app=express();
 const mongoose=require('mongoose');

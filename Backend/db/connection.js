@@ -1,6 +1,10 @@
-const mongoose=require('mongoose');
+const mongoose = require('mongoose');
+require('dotenv').config();
 
-//Database Connection with MongoDB
-mongoose.connect("mongodb://localhost:27017/E-Commerce").then( console.log("Connection Established :) ")).catch( (e)=>{
-   console.log(e);
-})
+mongoose.connect(process.env.MONGODB_URL)
+  .then(() => {
+      console.log("✅ MongoDB Connected Successfully!");
+  })
+  .catch((err) => {
+      console.error("❌ MongoDB Connection Error:", err);
+  });
